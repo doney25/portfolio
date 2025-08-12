@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Root variables for easy theme management */
+:root {
+    --main-color: #0ef; /* A vibrant blue-green for accents */
+    --bg-color: #1f242d; /* Dark background color */
+    --text-color: #ffffff; /* White text color */
+    --accent-color: #7cf03d; /* Your existing green accent color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Increased z-index to ensure it stays on top */
+    background: rgba(31, 36, 45, 0.9); /* Slightly transparent background for fixed nav */
+    backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+}
+
+.navbar .logo { /* Corrected from .navbar.logo */
+    font-size: 32px; /* Adjusted font size for better visual balance */
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 18px; /* Adjusted font size */
+    font-weight: 500;
+    transition: 0.3s ease; /* Smoother transition */
+    color: var(--text-color);
+}
+
+.navbar ul li a:hover,
+.navbar ul li.active a {
+    color: var(--main-color); /* Used the main accent color for hover/active */
+}
+
+/* Home Section Styling */
+.home {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    min-height: 100vh; /* Changed to min-height for content flexibility */
+    padding: 60px 9% 0;
+    gap: 40px; /* Space between text and image */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.home-info {
+    flex: 1; /* Allows text to take available space */
+    min-width: 300px; /* Ensures text doesn't get too narrow */
+    text-align: left; /* Align text to the left */
+}
+
+.home-info h1 {
+    font-size: 55px;
+    margin-bottom: 10px; /* Adjusted margin */
+    color: var(--text-color);
+}
+
+.home-info h2 {
+    font-size: 32px;
+    margin-bottom: 15px; /* Adjusted margin */
+    color: var(--main-color); /* Highlight with accent color */
+}
+
+.home-info p {
+    font-size: 17px; /* Slightly increased font size */
+    margin: 15px 0 30px; /* Adjusted margins */
+    max-width: 500px; /* Limit paragraph width for readability */
+    color: var(--text-color);
+}
+
+.home-info .btn-sci {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allow buttons and social icons to wrap */
+    gap: 20px; /* Space between button and social icons */
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 12px 30px; /* Adjusted padding */
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 40px;
+    box-shadow: 0 0 10px var(--main-color); /* Slightly increased shadow */
+    font-size: 16px;
+    color: var(--bg-color); /* Dark text on bright button */
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    color: var(--main-color);
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Social Icons Styling */
+.home-info .btn-sci .sci {
+    display: flex; /* Changed to flex for proper spacing */
+    gap: 15px; /* Space between social icons */
+}
+
+.home-info .btn-sci .sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Fixed width for consistent circle size */
+    height: 40px; /* Fixed height for consistent circle size */
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    transition: 0.5s ease;
+}
+
+.home-info .btn-sci .sci a:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+.about-content p{
+    text-align: justify;
+}
+
+/* Home Image Styling */
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-width: 300px; /* Ensures image doesn't get too small */
+}
+
+.home-img .img-box {
+    position: relative;
+    width: 350px; /* Fixed width for better control */
+    height: 350px; /* Fixed height */
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img .img-box .img-item {
+    position: relative;
+    width: 105%; /* Increased size of inner image box */
+    height: 105%;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    border: 1px solid var(--bg-color);
+}
+
+.home-img .img-box .img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+    transform: scale(1); /* Slightly zoom in the image */
+    margin-top: 10px; /* Resetting original margin-top */
+    margin-left: 0; /* Resetting original margin-left */
+}
+
+.project-card {
+    background: #2c303a;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 350px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+
+/* Border Animation for image */
+.home-img .img-box::before,
+.home-img .img-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(var(--main-color), transparent, transparent, transparent, transparent);
+    z-index: 1;
+    animation: rotateBorder 6s linear infinite;
+}
+
+.home-img .img-box::after {
+    animation-delay: -3s; /* Offset animation for continuous effect */
+}
+
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* General Section Styling (for About, Education, Contact) */
+.section {
+    padding: 80px 9%; /* Consistent padding for all sections */
+    min-height: 80vh; /* Ensures sections take up a good portion of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.section h2 {
+    font-size: 45px;
+    margin-bottom: 40px;
+    color: var(--main-color);
+}
+
+.section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 20px 5%;
+    }
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 5% 50px;
+    }
+    .home-info {
+        order: 2; /* Puts text below image on small screens */
+        margin-top: 30px;
+    }
+    .home-img {
+        order: 1; /* Puts image above text on small screens */
+    }
+    .home-img .img-box {
+        width: 280px;
+        height: 280px;
+    }
+    .home-info h1 {
+        font-size: 45px;
+    }
+    .home-info h2 {
+        font-size: 28px;
+    }
+    .section {
+        padding: 60px 5%;
+    }
+    .section h2 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none; /* Hide navigation links on smaller screens (consider adding a hamburger menu) */
+    }
+    .home-info h1 {
+        font-size: 38px;
+    }
+    .home-info h2 {
+        font-size: 24px;
+    }
+    .home-info p {
+        font-size: 16px;
+    }
+    .home-info .btn-sci {
+        justify-content: center; /* Center buttons and icons */
+    }
+    .btn {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+    .home-img .img-box {
+        width: 250px;
+        height: 250px;
+    }
+    .section h2 {
+        font-size: 32px;
+    }
+    .section p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 28px;
+    }
+    .home-info h1 {
+        font-size: 32px;
+    }
+    .home-info h2 {
+        font-size: 20px;
+    }
+    .home-info p {
+        font-size: 15px;
+    }
+    .home-img .img-box {
+        width: 200px;
+        height: 200px;
+    }
+    .section h2 {
+        font-size: 28px;
+    }
+}

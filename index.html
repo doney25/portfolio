@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doney Siby's Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio</a>
+        <ul>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="home-info">
+            <h1>Doney Siby</h1>
+            <h2>A Young Professional</h2>
+            <p>
+                "A young passionate software engineer, developing full-stack projects,
+                 and modern web technologies. I enjoy building
+                impactful applications and continuously learning to stay
+                ahead in the tech world.Currently working as Campus Lead μlearn SJCET and Community Lead IEDC SJCET. "
+            </p>
+            <div class="btn-sci">
+                <a href="assets/DoneyResume.pdf" download><button class="btn">Download Resume</button></a>
+                <div class="sci">
+                    <a href="https://www.linkedin.com/in/doneysiby25/?originalSubdomain=in" target="_blank" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/doney25" target="_blank" title="GitHub"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.instagram.com/doneyyyy_/" target="_blank" title="Instagram"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="/assest/new.PNG" alt="Doney Siby"> </div>
+            </div>
+        </div>
+    </section>
+<section class="section" id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <p>
+            A passionate and self-driven Computer Science and Engineering student with foundation in full-stack web
+            development, and emerging technologies. Skilled in building intelligent, real-time applications using the MERN stack,
+            Socket.IO, and custom-trained AI models. Hands-on experience includes developing innovative platforms like PETVERSE—an
+            AI-integrated online pet store with real-time buyer-seller chat—and a computer vision-based Rubik’s Cube solver. Good
+            foundation in Python, JavaScript, React, Node.js, and MongoDB, with a deep interest in solving real-world problems through
+            technology. Committed to continuous learning, effective collaboration, and crafting user-focused digital solutions that merge
+            utility with innovation.
+        </p>
+        <p>
+             A proactive learner with strong leadership, communication, and teamwork skills, demonstrated through roles like μLearn Campus Lead and NSS Execom member. Experienced in problem-solving and adaptability through projects like PETVERSE and a Rubik’s Cube Solver, I excel in managing time and tasks efficiently while exploring emerging technologies.
+        </p>
+    </div>
+</section>
+
+<section class="section" id="education">
+    <h2>Education & Experience</h2>
+    <div class="education-content">
+        <p>
+            <strong>St. Joseph’s College of Engineering and Technology, Palai</strong> | B.Tech in Computer Science and Engineering<br>
+            <em>Current CGPA: 8.11 | Expected Graduation: June 2026</em>
+        </p>
+        <p>
+            <strong>Emmanuel’s Higher Secondary School, Kothanalloor, Kerala</strong> | Class XII (Kerala State Board)<br>
+            <em>Year of Completion: 2022 | Percentage: 97.3%</em>
+        </p>
+        <p>
+            <strong>De Paul Higher Secondary School, Kuravilangad, Kerala</strong> | Class X (Kerala State Board)<br>
+            <em>Year of Completion: 2020 | A+ in all subjects</em>
+        </p>
+        <hr style="border: 0; border-top: 1px solid #444; margin: 30px 0;">
+    </div>
+</section>
+
+<section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+
+        <!-- Project 1 -->
+        <div class="project-card" style="background: #2c303a; border-radius: 12px; padding: 20px; max-width: 350px; text-align: left; box-shadow: 0 0 10px rgba(0,255,255,0.1);">
+            <h3 style="color: var(--main-color); font-size: 22px;">PETVERSE – Online Pet Store</h3>
+            <p style="font-size: 16px; margin-top: 10px;">
+                MERN-stack platform enabling buyers and sellers to interact with real-time chat (Socket.IO), breed verification using custom AI models, JWT auth, ratings, and live pet listings.
+            </p>
+            <p style="margin-top: 10px;"><strong>Tech:</strong> React, Node.js, Express.js, MongoDB, Tailwind CSS</p>
+            <p style="margin-top: 10px;">
+                <strong>URL:</strong> <a href="https://petverse-eight.vercel.app/" target="_blank" style="color: var(--main-color); text-decoration: underline;">petverse</a>
+            </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" style="background: #2c303a; border-radius: 12px; padding: 20px; max-width: 350px; text-align: left; box-shadow: 0 0 10px rgba(0,255,255,0.1);">
+            <h3 style="color: var(--main-color); font-size: 22px;">AI-Based Real-Time Speech Therapy</h3>
+            <p style="font-size: 16px; margin-top: 10px;">
+                AI-powered speech therapy system designed for real-time fluency detection and feedback for stammering individuals. Still under development.
+            </p>
+            <p style="margin-top: 10px;"><strong>Tech:</strong> Python, TensorFlow/PyTorch, Speech Recognition</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" style="background: #2c303a; border-radius: 12px; padding: 20px; max-width: 350px; text-align: left; box-shadow: 0 0 10px rgba(0,255,255,0.1);">
+            <h3 style="color: var(--main-color); font-size: 22px;">To-Do List – Task Manager</h3>
+            <p style="font-size: 16px; margin-top: 10px;">
+                A simple and responsive task management app with add/edit/delete functionality and persistent local storage.
+            </p>
+            <p style="margin-top: 10px;"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+            <p style="margin-top: 10px;">
+                <strong>URL:</strong> <a href="https://todo-listapp25.netlify.app/" target="_blank" style="color: var(--main-color); text-decoration: underline;">todo-list App</a>
+            </p>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" style="background: #2c303a; border-radius: 12px; padding: 20px; max-width: 350px; text-align: left; box-shadow: 0 0 10px rgba(0,255,255,0.1);">
+            <h3 style="color: var(--main-color); font-size: 22px;">QR Code Generator</h3>
+            <p style="font-size: 16px; margin-top: 10px;">
+                A web application that generates a QR code from a user-provided link, built using HTML, CSS, and JavaScript.
+            </p>
+            <p style="margin-top: 10px;"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+            <p style="margin-top: 10px;">
+                <strong>URL:</strong> <a href="http://qrcode-generator25.netlify.app/" target="_blank" style="color: var(--main-color); text-decoration: underline;">QR Code Generator</a>
+            </p>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" style="background: #2c303a; border-radius: 12px; padding: 20px; max-width: 350px; text-align: left; box-shadow: 0 0 10px rgba(0,255,255,0.1);">
+            <h3 style="color: var(--main-color); font-size: 22px;">Temperature Converter</h3>
+            <p style="font-size: 16px; margin-top: 10px;">
+                A web application that converts temperatures between Celsius and Fahrenheit, developed using HTML, CSS, and JavaScript.
+            </p>
+            <p style="margin-top: 10px;"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+            <p style="margin-top: 10px;">
+                <strong>URL:</strong> <a href="https://temperature-convertor25.netlify.app/" target="_blank" style="color: var(--main-color); text-decoration: underline;">Temperature Convertor</a>
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-content">
+        <p>
+            Feel free to reach out if you'd like to connect, discuss a project, or just say hello!
+        </p>
+        <p>
+            Email: <a href="mailto:doney2k3@gmail.com">doney2k3@gmail.com</a>
+        </p>
+        <p>
+            Phone: +91 8075260067
+        </p>
+        <p>
+            You can also connect with me on social media:
+        </p>
+        <div class="sci" style="justify-content: center; margin-top: 20px;">
+            <a href="https://www.linkedin.com/in/doneysiby25/?originalSubdomain=in" title="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/doney25" title="GitHub"><i class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/doneyyyy_/" title="Instagram"><i class="bx bxl-instagram"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- Add this script before the closing </body> tag -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = ["home", "about", "education", "projects", "contact"];
+    const navLinks = document.querySelectorAll(".navbar ul li");
+
+    function activateNav() {
+        let index = sections.length - 1;
+        for (let i = 0; i < sections.length; i++) {
+            const section = document.getElementById(sections[i]);
+            if (section) {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 80) {
+                    index = i;
+                }
+            }
+        }
+        navLinks.forEach((li, i) => {
+            if (i === index) {
+                li.classList.add("active");
+            } else {
+                li.classList.remove("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", activateNav);
+    activateNav();
+});
+</script>
+</body>
+
+</html>
